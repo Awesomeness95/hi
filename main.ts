@@ -11,6 +11,116 @@ controller.combos.attachCombo("Left right", function () {
     animation.stopAnimation(animation.AnimationTypes.All, mySprite)
     animation.stopAnimation(animation.AnimationTypes.All, mySprite2)
 })
+controller.combos.attachCombo("Right down", function () {
+    animation.runImageAnimation(
+    mySprite2,
+    [img`
+        . . . . . . . f f f f f . . . . 
+        . . . . . . f 7 7 7 7 7 f . . . 
+        . . . . . f 7 7 7 d d d d f . . 
+        . . . . f f 7 7 d f d d f d c . 
+        . . . f d d 7 7 d f d d f d c . 
+        . . . c d b 7 7 d d d d b b d c 
+        . . . c d b 7 7 d d c d d d d c 
+        . . . . c f 7 7 7 d d c c c c c 
+        . . . . . f f 7 7 7 d d d d f . 
+        . . . . f 7 7 7 7 f f f f f . . 
+        f f . f 7 7 7 7 7 7 f f . . . . 
+        f 7 . f 7 7 f 7 7 f 7 7 f . . . 
+        f 7 . f 7 7 7 f 7 7 f 7 7 f . . 
+        f 7 f f 7 f b b f b d f d b f . 
+        f f f f 7 b d d f d d f d d f . 
+        . f f f f f f f f f f f f f . . 
+        `,img`
+        . . . . . . . f f f f f . . . . 
+        . . . . . . f 7 7 7 7 7 f . . . 
+        . . . . . f 7 7 7 d d d d f . . 
+        . . . . f f 7 7 d f d d f d c . 
+        . . . f d d 7 7 d f d d f d c . 
+        . . . c d b 7 7 d d d d b b d c 
+        . . . c d b 7 7 d d c d d d d c 
+        . . . . c f 7 7 7 d d c c c c c 
+        . . . . . f f 7 7 7 d d d d f . 
+        . . . . f 7 7 7 f f 7 7 7 f . . 
+        f f . f 7 7 7 7 7 f f f f f . . 
+        f 7 . f 7 7 f f 7 7 f b d f . . 
+        f 7 . f 7 7 7 f f 7 f d d f f . 
+        f 7 f f 7 f b b 7 f f f f f f . 
+        f f f f 7 b d d 7 7 7 f d d f . 
+        . f f f f f f f f f f f f f . . 
+        `,img`
+        . . . . . . f f f f f . . . . . 
+        . . . . . f 7 7 7 7 7 f . . . . 
+        . . . . f 7 7 d d d d d f . . . 
+        . . . f f 7 d f f d d f f f . . 
+        . . f d d 7 d d d d b b d d c . 
+        . f f f d 7 d d c d d d d c c . 
+        f d b f d 7 d d d c c c c d c . 
+        f d d f f 7 7 d d d d d d c . . 
+        f f f 7 f f 7 7 d d d d c . . . 
+        . . f 7 7 7 f 7 7 f f f . . . . 
+        . f f f 7 7 7 7 7 7 7 f . . . . 
+        . f 7 f f f 7 7 7 7 7 7 f . . . 
+        . f 7 f f f f f 7 7 7 7 f f . . 
+        . f 7 f f f b b f 7 7 f d b f . 
+        . f f f f b d d f 7 7 f d d f . 
+        . . f f f f f f f f f f f f f . 
+        `,img`
+        . . . . . . f f f f f . . . . . 
+        . . . . . f 7 7 7 7 7 f . . . . 
+        . . . . f 7 d d d d d d f . . . 
+        . . . f f d f f d d f f d f . . 
+        . . f d 7 d d d d b b d d d c . 
+        . . f f 7 d d c d d d d c d c . 
+        f f f f 7 d d d c c c c d d c . 
+        f d b f f 7 d d d d d d d c . . 
+        f d d f f f 7 7 d d d d c . . . 
+        f f f 7 7 7 f 7 7 f f f . . . . 
+        . f f f 7 7 7 7 7 7 7 f . . . . 
+        . f 7 f f f 7 7 7 7 7 7 f . . . 
+        . f 7 f f f f f 7 7 7 7 f f . . 
+        . f 7 f f f b b f 7 7 f d b f . 
+        . f f f f b d d f f f f d d f . 
+        . . f f f f f f f f f f f f f . 
+        `,img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . f f f f f . . . . 
+        . . . . . . f 7 7 7 7 7 f . . . 
+        . . . . . f 7 7 7 d d d d f . . 
+        . . . . f f 7 7 d d d d d f . . 
+        . . . f d d 7 7 d f f d d d c . 
+        . . . c d b 7 7 d d d d b b d c 
+        . . . c d b 7 7 d d c d d f f c 
+        . . . . f 7 7 7 f f f 7 f d d f 
+        . . . . f f f f f 7 7 7 f d d f 
+        . f f . f f 7 7 7 7 7 f f f f f 
+        . f 7 . f f 7 7 7 f f 7 f f f . 
+        . f 7 f f f b b f f 7 f d b f . 
+        . f 7 f f b d d f 7 7 f d d f . 
+        . . f f f f f f f f f f f f f . 
+        `,img`
+        . . . . . . . f f f f f . . . . 
+        . . . . . . f 7 7 7 7 7 f . . . 
+        . . . . . f 7 7 7 d d d d f . . 
+        . . . . f f 7 7 d d f d d f . . 
+        . . . f d d 7 7 d d f d d d c . 
+        . . . c d b 7 7 d d d d b b d c 
+        . . . c d b 7 7 d d c d d d d c 
+        . . . f c f 7 7 d d d f f f f c 
+        . . . . f 7 7 7 7 f f f d b f . 
+        . . . . f 7 7 f f f 7 f d d f . 
+        . f f . f f f 7 7 7 7 f f f . . 
+        . f 7 . f f 7 7 7 7 f 7 7 f . . 
+        . f 7 f f f f f f f 7 7 7 f f . 
+        . f 7 f f f b b f 7 7 f d b f . 
+        . f f f f b d d 7 7 f f d d f . 
+        . . f f f f f f f f f f f f f . 
+        `],
+    100,
+    false
+    )
+})
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
@@ -85,6 +195,116 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         `],
     100,
     true
+    )
+})
+controller.combos.attachCombo("Left down", function () {
+    animation.runImageAnimation(
+    mySprite2,
+    [img`
+        . . . . f f f f f . . . . . . . 
+        . . . f 7 7 7 7 7 f . . . . . . 
+        . . f d d d d 7 7 7 f . . . . . 
+        . c d f d d f d 7 7 f f . . . . 
+        . c d f d d f d 7 7 d d f . . . 
+        c d b b d d d d 7 7 b d c . . . 
+        c d d d d c d d 7 7 b d c . . . 
+        c c c c c d d 7 7 7 f c . . . . 
+        . f d d d d 7 7 7 f f . . . . . 
+        . . f f f f f 7 7 7 7 f . . . . 
+        . . . . f f 7 7 7 7 7 7 f . f f 
+        . . . f 7 7 f 7 7 f 7 7 f . 7 f 
+        . . f 7 7 f 7 7 f 7 7 7 f . 7 f 
+        . f b d f d b f b b f 7 f f 7 f 
+        . f d d f d d f d d b 7 f f f f 
+        . . f f f f f f f f f f f f f . 
+        `,img`
+        . . . . f f f f f . . . . . . . 
+        . . . f 7 7 7 7 7 f . . . . . . 
+        . . f d d d d 7 7 7 f . . . . . 
+        . c d f d d f d 7 7 f f . . . . 
+        . c d f d d f d 7 7 d d f . . . 
+        c d b b d d d d 7 7 b d c . . . 
+        c d d d d c d d 7 7 b d c . . . 
+        c c c c c d d 7 7 7 f c . . . . 
+        . f d d d d 7 7 7 f f . . . . . 
+        . . f 7 7 7 f f 7 7 7 f . . . . 
+        . . f f f f f 7 7 7 7 7 f . f f 
+        . . f d b f 7 7 f f 7 7 f . 7 f 
+        . f f d d f 7 f f 7 7 7 f . 7 f 
+        . f f f f f f 7 b b f 7 f f 7 f 
+        . f d d f 7 7 7 d d b 7 f f f f 
+        . . f f f f f f f f f f f f f . 
+        `,img`
+        . . . . . f f f f f . . . . . . 
+        . . . . f 7 7 7 7 7 f . . . . . 
+        . . . f d d d d d 7 7 f . . . . 
+        . . f f f d d f f d 7 f f . . . 
+        . c d d b b d d d d 7 d d f . . 
+        . c c d d d d c d d 7 d f f f . 
+        . c d c c c c d d d 7 d f b d f 
+        . . c d d d d d d 7 7 f f d d f 
+        . . . c d d d d 7 7 f f 7 f f f 
+        . . . . f f f 7 7 f 7 7 7 f . . 
+        . . . . f 7 7 7 7 7 7 7 f f f . 
+        . . . f 7 7 7 7 7 7 f f f 7 f . 
+        . . f f 7 7 7 7 f f f f f 7 f . 
+        . f b d f 7 7 f b b f f f 7 f . 
+        . f d d f 7 7 f d d b f f f f . 
+        . f f f f f f f f f f f f f . . 
+        `,img`
+        . . . . . f f f f f . . . . . . 
+        . . . . f 7 7 7 7 7 f . . . . . 
+        . . . f d d d d d d 7 f . . . . 
+        . . f d f f d d f f d f f . . . 
+        . c d d d b b d d d d 7 d f . . 
+        . c d c d d d d c d d 7 f f . . 
+        . c d d c c c c d d d 7 f f f f 
+        . . c d d d d d d d 7 f f b d f 
+        . . . c d d d d 7 7 f f f d d f 
+        . . . . f f f 7 7 f 7 7 7 f f f 
+        . . . . f 7 7 7 7 7 7 7 f f f . 
+        . . . f 7 7 7 7 7 7 f f f 7 f . 
+        . . f f 7 7 7 7 f f f f f 7 f . 
+        . f b d f 7 7 f b b f f f 7 f . 
+        . f d d f f f f d d b f f f f . 
+        . f f f f f f f f f f f f f . . 
+        `,img`
+        . . . . f f f f f . . . . . . . 
+        . . . f 7 7 7 7 7 f . . . . . . 
+        . . f d d d d 7 7 7 f . . . . . 
+        . . f d d f d d 7 7 f f . . . . 
+        . c d d d f d d 7 7 d d f . . . 
+        c d b b d d d d 7 7 b d c . . . 
+        c d d d d c d d 7 7 b d c . . . 
+        c f f f f d d d 7 7 f c f . . . 
+        . f b d f f f 7 7 7 7 f . . . . 
+        . f d d f 7 f f f 7 7 f . . . . 
+        . . f f f 7 7 7 7 f f f . f f . 
+        . . f 7 7 f 7 7 7 7 f f . 7 f . 
+        . f f 7 7 7 f f f f f f f 7 f . 
+        . f b d f 7 7 f b b f f f 7 f . 
+        . f d d f f 7 7 d d b f f f f . 
+        . f f f f f f f f f f f f f . . 
+        `,img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . f f f f f . . . . . . . 
+        . . . f 7 7 7 7 7 f . . . . . . 
+        . . f d d d d 7 7 7 f . . . . . 
+        . . f d d d d d 7 7 f f . . . . 
+        . c d d d f f d 7 7 d d f . . . 
+        c d b b d d d d 7 7 b d c . . . 
+        c f f d d c d d 7 7 b d c . . . 
+        f d d f 7 f f f 7 7 7 f . . . . 
+        f d d f 7 7 7 f f f f f . . . . 
+        f f f f f 7 7 7 7 7 f f . f f . 
+        . f f f 7 f f 7 7 7 f f . 7 f . 
+        . f b d f 7 f f b b f f f 7 f . 
+        . f d d f 7 7 f d d b f f 7 f . 
+        . f f f f f f f f f f f f f . . 
+        `],
+    100,
+    false
     )
 })
 info.onCountdownEnd(function () {
@@ -607,114 +827,6 @@ controller.combos.attachCombo("Down right", function () {
     100,
     false
     )
-    animation.runImageAnimation(
-    mySprite2,
-    [img`
-        . . . . . . . f f f f f . . . . 
-        . . . . . . f 7 7 7 7 7 f . . . 
-        . . . . . f 7 7 7 d d d d f . . 
-        . . . . f f 7 7 d f d d f d c . 
-        . . . f d d 7 7 d f d d f d c . 
-        . . . c d b 7 7 d d d d b b d c 
-        . . . c d b 7 7 d d c d d d d c 
-        . . . . c f 7 7 7 d d c c c c c 
-        . . . . . f f 7 7 7 d d d d f . 
-        . . . . f 7 7 7 7 f f f f f . . 
-        f f . f 7 7 7 7 7 7 f f . . . . 
-        f 7 . f 7 7 f 7 7 f 7 7 f . . . 
-        f 7 . f 7 7 7 f 7 7 f 7 7 f . . 
-        f 7 f f 7 f b b f b d f d b f . 
-        f f f f 7 b d d f d d f d d f . 
-        . f f f f f f f f f f f f f . . 
-        `,img`
-        . . . . . . . f f f f f . . . . 
-        . . . . . . f 7 7 7 7 7 f . . . 
-        . . . . . f 7 7 7 d d d d f . . 
-        . . . . f f 7 7 d f d d f d c . 
-        . . . f d d 7 7 d f d d f d c . 
-        . . . c d b 7 7 d d d d b b d c 
-        . . . c d b 7 7 d d c d d d d c 
-        . . . . c f 7 7 7 d d c c c c c 
-        . . . . . f f 7 7 7 d d d d f . 
-        . . . . f 7 7 7 f f 7 7 7 f . . 
-        f f . f 7 7 7 7 7 f f f f f . . 
-        f 7 . f 7 7 f f 7 7 f b d f . . 
-        f 7 . f 7 7 7 f f 7 f d d f f . 
-        f 7 f f 7 f b b 7 f f f f f f . 
-        f f f f 7 b d d 7 7 7 f d d f . 
-        . f f f f f f f f f f f f f . . 
-        `,img`
-        . . . . . . f f f f f . . . . . 
-        . . . . . f 7 7 7 7 7 f . . . . 
-        . . . . f 7 7 d d d d d f . . . 
-        . . . f f 7 d f f d d f f f . . 
-        . . f d d 7 d d d d b b d d c . 
-        . f f f d 7 d d c d d d d c c . 
-        f d b f d 7 d d d c c c c d c . 
-        f d d f f 7 7 d d d d d d c . . 
-        f f f 7 f f 7 7 d d d d c . . . 
-        . . f 7 7 7 f 7 7 f f f . . . . 
-        . f f f 7 7 7 7 7 7 7 f . . . . 
-        . f 7 f f f 7 7 7 7 7 7 f . . . 
-        . f 7 f f f f f 7 7 7 7 f f . . 
-        . f 7 f f f b b f 7 7 f d b f . 
-        . f f f f b d d f 7 7 f d d f . 
-        . . f f f f f f f f f f f f f . 
-        `,img`
-        . . . . . . f f f f f . . . . . 
-        . . . . . f 7 7 7 7 7 f . . . . 
-        . . . . f 7 d d d d d d f . . . 
-        . . . f f d f f d d f f d f . . 
-        . . f d 7 d d d d b b d d d c . 
-        . . f f 7 d d c d d d d c d c . 
-        f f f f 7 d d d c c c c d d c . 
-        f d b f f 7 d d d d d d d c . . 
-        f d d f f f 7 7 d d d d c . . . 
-        f f f 7 7 7 f 7 7 f f f . . . . 
-        . f f f 7 7 7 7 7 7 7 f . . . . 
-        . f 7 f f f 7 7 7 7 7 7 f . . . 
-        . f 7 f f f f f 7 7 7 7 f f . . 
-        . f 7 f f f b b f 7 7 f d b f . 
-        . f f f f b d d f f f f d d f . 
-        . . f f f f f f f f f f f f f . 
-        `,img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . f f f f f . . . . 
-        . . . . . . f 7 7 7 7 7 f . . . 
-        . . . . . f 7 7 7 d d d d f . . 
-        . . . . f f 7 7 d d d d d f . . 
-        . . . f d d 7 7 d f f d d d c . 
-        . . . c d b 7 7 d d d d b b d c 
-        . . . c d b 7 7 d d c d d f f c 
-        . . . . f 7 7 7 f f f 7 f d d f 
-        . . . . f f f f f 7 7 7 f d d f 
-        . f f . f f 7 7 7 7 7 f f f f f 
-        . f 7 . f f 7 7 7 f f 7 f f f . 
-        . f 7 f f f b b f f 7 f d b f . 
-        . f 7 f f b d d f 7 7 f d d f . 
-        . . f f f f f f f f f f f f f . 
-        `,img`
-        . . . . . . . f f f f f . . . . 
-        . . . . . . f 7 7 7 7 7 f . . . 
-        . . . . . f 7 7 7 d d d d f . . 
-        . . . . f f 7 7 d d f d d f . . 
-        . . . f d d 7 7 d d f d d d c . 
-        . . . c d b 7 7 d d d d b b d c 
-        . . . c d b 7 7 d d c d d d d c 
-        . . . f c f 7 7 d d d f f f f c 
-        . . . . f 7 7 7 7 f f f d b f . 
-        . . . . f 7 7 f f f 7 f d d f . 
-        . f f . f f f 7 7 7 7 f f f . . 
-        . f 7 . f f 7 7 7 7 f 7 7 f . . 
-        . f 7 f f f f f f f 7 7 7 f f . 
-        . f 7 f f f b b f 7 7 f d b f . 
-        . f f f f b d d 7 7 f f d d f . 
-        . . f f f f f f f f f f f f f . 
-        `],
-    100,
-    false
-    )
 })
 controller.combos.attachCombo("Down left", function () {
     animation.runImageAnimation(
@@ -821,114 +933,6 @@ controller.combos.attachCombo("Down left", function () {
         ......c5c5555455ccccc5c.
         .....c5c5555545cc...c5c.
         .....ccccccccccc....ccc.
-        `],
-    100,
-    false
-    )
-    animation.runImageAnimation(
-    mySprite2,
-    [img`
-        . . . . f f f f f . . . . . . . 
-        . . . f 7 7 7 7 7 f . . . . . . 
-        . . f d d d d 7 7 7 f . . . . . 
-        . c d f d d f d 7 7 f f . . . . 
-        . c d f d d f d 7 7 d d f . . . 
-        c d b b d d d d 7 7 b d c . . . 
-        c d d d d c d d 7 7 b d c . . . 
-        c c c c c d d 7 7 7 f c . . . . 
-        . f d d d d 7 7 7 f f . . . . . 
-        . . f f f f f 7 7 7 7 f . . . . 
-        . . . . f f 7 7 7 7 7 7 f . f f 
-        . . . f 7 7 f 7 7 f 7 7 f . 7 f 
-        . . f 7 7 f 7 7 f 7 7 7 f . 7 f 
-        . f b d f d b f b b f 7 f f 7 f 
-        . f d d f d d f d d b 7 f f f f 
-        . . f f f f f f f f f f f f f . 
-        `,img`
-        . . . . f f f f f . . . . . . . 
-        . . . f 7 7 7 7 7 f . . . . . . 
-        . . f d d d d 7 7 7 f . . . . . 
-        . c d f d d f d 7 7 f f . . . . 
-        . c d f d d f d 7 7 d d f . . . 
-        c d b b d d d d 7 7 b d c . . . 
-        c d d d d c d d 7 7 b d c . . . 
-        c c c c c d d 7 7 7 f c . . . . 
-        . f d d d d 7 7 7 f f . . . . . 
-        . . f 7 7 7 f f 7 7 7 f . . . . 
-        . . f f f f f 7 7 7 7 7 f . f f 
-        . . f d b f 7 7 f f 7 7 f . 7 f 
-        . f f d d f 7 f f 7 7 7 f . 7 f 
-        . f f f f f f 7 b b f 7 f f 7 f 
-        . f d d f 7 7 7 d d b 7 f f f f 
-        . . f f f f f f f f f f f f f . 
-        `,img`
-        . . . . . f f f f f . . . . . . 
-        . . . . f 7 7 7 7 7 f . . . . . 
-        . . . f d d d d d 7 7 f . . . . 
-        . . f f f d d f f d 7 f f . . . 
-        . c d d b b d d d d 7 d d f . . 
-        . c c d d d d c d d 7 d f f f . 
-        . c d c c c c d d d 7 d f b d f 
-        . . c d d d d d d 7 7 f f d d f 
-        . . . c d d d d 7 7 f f 7 f f f 
-        . . . . f f f 7 7 f 7 7 7 f . . 
-        . . . . f 7 7 7 7 7 7 7 f f f . 
-        . . . f 7 7 7 7 7 7 f f f 7 f . 
-        . . f f 7 7 7 7 f f f f f 7 f . 
-        . f b d f 7 7 f b b f f f 7 f . 
-        . f d d f 7 7 f d d b f f f f . 
-        . f f f f f f f f f f f f f . . 
-        `,img`
-        . . . . . f f f f f . . . . . . 
-        . . . . f 7 7 7 7 7 f . . . . . 
-        . . . f d d d d d d 7 f . . . . 
-        . . f d f f d d f f d f f . . . 
-        . c d d d b b d d d d 7 d f . . 
-        . c d c d d d d c d d 7 f f . . 
-        . c d d c c c c d d d 7 f f f f 
-        . . c d d d d d d d 7 f f b d f 
-        . . . c d d d d 7 7 f f f d d f 
-        . . . . f f f 7 7 f 7 7 7 f f f 
-        . . . . f 7 7 7 7 7 7 7 f f f . 
-        . . . f 7 7 7 7 7 7 f f f 7 f . 
-        . . f f 7 7 7 7 f f f f f 7 f . 
-        . f b d f 7 7 f b b f f f 7 f . 
-        . f d d f f f f d d b f f f f . 
-        . f f f f f f f f f f f f f . . 
-        `,img`
-        . . . . f f f f f . . . . . . . 
-        . . . f 7 7 7 7 7 f . . . . . . 
-        . . f d d d d 7 7 7 f . . . . . 
-        . . f d d f d d 7 7 f f . . . . 
-        . c d d d f d d 7 7 d d f . . . 
-        c d b b d d d d 7 7 b d c . . . 
-        c d d d d c d d 7 7 b d c . . . 
-        c f f f f d d d 7 7 f c f . . . 
-        . f b d f f f 7 7 7 7 f . . . . 
-        . f d d f 7 f f f 7 7 f . . . . 
-        . . f f f 7 7 7 7 f f f . f f . 
-        . . f 7 7 f 7 7 7 7 f f . 7 f . 
-        . f f 7 7 7 f f f f f f f 7 f . 
-        . f b d f 7 7 f b b f f f 7 f . 
-        . f d d f f 7 7 d d b f f f f . 
-        . f f f f f f f f f f f f f . . 
-        `,img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . f f f f f . . . . . . . 
-        . . . f 7 7 7 7 7 f . . . . . . 
-        . . f d d d d 7 7 7 f . . . . . 
-        . . f d d d d d 7 7 f f . . . . 
-        . c d d d f f d 7 7 d d f . . . 
-        c d b b d d d d 7 7 b d c . . . 
-        c f f d d c d d 7 7 b d c . . . 
-        f d d f 7 f f f 7 7 7 f . . . . 
-        f d d f 7 7 7 f f f f f . . . . 
-        f f f f f 7 7 7 7 7 f f . f f . 
-        . f f f 7 f f 7 7 7 f f . 7 f . 
-        . f b d f 7 f f b b f f f 7 f . 
-        . f d d f 7 7 f d d b f f 7 f . 
-        . f f f f f f f f f f f f f . . 
         `],
     100,
     false
